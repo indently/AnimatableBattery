@@ -35,7 +35,7 @@ struct BatteryView: View {
                     .padding()
                 
                 Text("\(Int(self.progress * 100))%")
-                    .foregroundColor(.white)
+                    .foregroundColor(progress <= 0.5 ? .white : .black)
                     .animation(nil)
                     .opacity(opacity)
                 
